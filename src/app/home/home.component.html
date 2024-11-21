@@ -1,0 +1,14 @@
+<div class="d-flex align-content-center justify-content-center gap-3 m-4">
+    <button class="btn btn-primary" (click)="changeTreeType('forceDirected')">Force Directed Tree</button>
+    <button class="btn btn-success" (click)="changeTreeType('tidyTree')">Tidy Tree</button>
+</div>
+
+
+<div class="mt-5">
+  <div *ngIf="treeType === 'tidyTree'">
+    <app-tidy-tree ></app-tidy-tree>
+  </div>
+  <div *ngIf="treeType === 'forceDirected'">
+    <app-force-directed-tree></app-force-directed-tree>
+  </div>
+</div>
