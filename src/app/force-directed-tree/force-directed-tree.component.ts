@@ -124,35 +124,5 @@ export class ForceDirectedTreeComponent implements AfterViewInit  {
 
     return svg.node();
   }
-
-  // Correctly typing the drag behavior for d3.
-  // drag(simulation: any) {
-  //   // Ensure event parameters and data types are explicit.
-  //   function dragstarted(event: any, d: any) {
-  //     if (!event.active) simulation.alphaTarget(0.3).restart();
-  //     d.fx = d.x;
-  //     d.fy = d.y;
-  //   }
-
-  //   function dragged(event: any, d: any) {
-  //     d.fx = event.x;
-  //     d.fy = event.y;
-  //   }
-
-  //   function dragended(event: any, d: any) {
-  //     if (!event.active) simulation.alphaTarget(0);
-  //     d.fx = null;
-  //     d.fy = null;
-  //   }
-
-  //   // Explicitly define the element type and data type for D3 drag behavior
-  //   return d3.drag<SVGCircleElement, any>()
-  //     .on("start", dragstarted)
-  //     .on("drag", dragged)
-  //     .on("end", dragended);
-  // }
-}
-function ngAfterViewInit() {
-  throw new Error('Function not implemented.');
 }
 
