@@ -18,7 +18,8 @@ export class TidyTreeComponent implements AfterViewInit {
   }
 
   createTree() {
-    const width = 928;
+    // const width = 928;
+    const width = 1500;
 
     // Compute the tree height; this approach will allow the height of the
     // SVG to scale according to the breadth (width) of the tree layout.

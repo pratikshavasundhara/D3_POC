@@ -21,7 +21,7 @@ export class ForceDirectedTreeComponent implements AfterViewInit  {
     const that = this;
 
     // Specify the chart’s dimensions.
-    const width = 928;
+    const width = 1500;
     const height = 600;
 
     // Compute the graph and start the force simulation.
